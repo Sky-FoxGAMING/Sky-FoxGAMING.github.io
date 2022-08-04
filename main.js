@@ -44,7 +44,7 @@ function instAnim(text, reset) {
     document.getElementById("terminal").innerHTML += text;
 }
 document.addEventListener("DOMContentLoaded", () => {
-    /*var wait
+    var wait
     var ip
     fetch("https://api.ipify.org/")
         .then((r) => r.text())
@@ -90,24 +90,36 @@ document.addEventListener("DOMContentLoaded", () => {
 																	document.getElementById("animateText").style.setProperty("opacity", "1")
 																	setTimeout(() => {
 																		document.getElementById("animateText").style.setProperty("opacity", "0")
-																		setTimeout(() => {*/
+																		setTimeout(() => {
 																			document.getElementById("animateText").innerHTML = "My primary programming language is java, but I also code in LUA and PHP.";
 																			document.getElementById("animateText").style.setProperty("opacity", "1")
-																			/*setTimeout(() => {
+																			setTimeout(() => {
+                                                                                
 																				document.getElementById("animateText").style.setProperty("opacity", "0")
-																				setTimeout(() => {*/
-																					document.getElementById("animateText").innerHTML = "Welcome!";
-																					document.getElementById("animateText").style.setProperty("opacity", "1")
-																					fetch("https://api.github.com/users/LateAlways/repos")
+																				setTimeout(() => {
+                                                                                    document.getElementById("animateText").innerHTML = "Welcome!";
+																					fetch("https://api.github.com/users/sky-foxgaming/repos")
 																					.then(resp => resp.json())
 																					.then(data => {
-																						//To be done
+                                                                                        var example = document.getElementById("template").innerHTML;
+																						for (let i = 0; i < data.length; i++) {
+                                                                                            let val = data[i];
+                                                                                            var add = example
+                                                                                            add = add.replaceAll("{repo name}",val["full_name"])
+                                                                                            add = add.replaceAll("{description}",val["description"])
+                                                                                            add = add.replaceAll("{star_count}",val["stargazers_count"])
+                                                                                            add = add.replaceAll("{language}",val["language"] || "None")
+                                                                                            document.getElementById("repos").innerHTML += add
+                                                                                        }
 																					})
 																					setTimeout(() => {
+                                                                                        document.getElementById("main").style.removeProperty("display")
+                                                                                        document.getElementById("animateText").hidden = true
+                                                                                        document.getElementById("term").hidden = true
 																						document.getElementById("animateText").style.setProperty("opacity", "0")
 																						document.getElementById("page").style.setProperty("opacity", "0")
 																					}, 2000)
-																				/*}, 130)
+																				}, 130)
 																			}, 2000)
 																		}, 130)
 																	}, 2000)
@@ -125,5 +137,5 @@ document.addEventListener("DOMContentLoaded", () => {
                     }, wait + 750)
                 }, 500)
             });
-    }, 500)*/
+    }, 500)
 });
