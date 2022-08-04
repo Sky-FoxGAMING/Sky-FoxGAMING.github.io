@@ -44,7 +44,7 @@ function instAnim(text, reset) {
     document.getElementById("terminal").innerHTML += text;
 }
 document.addEventListener("DOMContentLoaded", () => {
-    var wait
+    /*var wait
     var ip
     fetch("https://api.ipify.org/")
         .then((r) => r.text())
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             .then((r) => r.json())
                             .then(data => {
                                 instAnim("<br><span style=\"color: rgba(50,255,50,255);\">" + ip + "@me.fuchsiax.dev ~ $</span> ", false)
-                                wait = animate("Looks like we have someone from " + data["country"] + ", that's cool!")
+                                wait = animate("Looks like we have someone from " + data["country_name"] + ", that's cool!")
                                 setTimeout(() => {
                                     instAnim("<br><span style=\"color: rgba(50,255,50,255);\">" + ip + "@me.fuchsiax.dev ~ $</span> ", false)
                                     setTimeout(() => {
@@ -90,12 +90,12 @@ document.addEventListener("DOMContentLoaded", () => {
 																	document.getElementById("animateText").style.setProperty("opacity", "1")
 																	setTimeout(() => {
 																		document.getElementById("animateText").style.setProperty("opacity", "0")
-																		setTimeout(() => {
+																		setTimeout(() => {*/
 																			document.getElementById("animateText").innerHTML = "My primary programming language is java, but I also code in LUA and PHP.";
 																			document.getElementById("animateText").style.setProperty("opacity", "1")
-																			setTimeout(() => {
+																			/*setTimeout(() => {
 																				document.getElementById("animateText").style.setProperty("opacity", "0")
-																				setTimeout(() => {
+																				setTimeout(() => {*/
 																					document.getElementById("animateText").innerHTML = "Welcome!";
 																					document.getElementById("animateText").style.setProperty("opacity", "1")
 																					fetch("https://api.github.com/users/LateAlways/repos")
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
 																						document.getElementById("animateText").style.setProperty("opacity", "0")
 																						document.getElementById("page").style.setProperty("opacity", "0")
 																					}, 2000)
-																				}, 130)
+																				/*}, 130)
 																			}, 2000)
 																		}, 130)
 																	}, 2000)
@@ -125,5 +125,5 @@ document.addEventListener("DOMContentLoaded", () => {
                     }, wait + 750)
                 }, 500)
             });
-    }, 500)
+    }, 500)*/
 });

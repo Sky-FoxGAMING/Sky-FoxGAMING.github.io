@@ -1,8 +1,28 @@
 body {
 	background-color: rgba(10, 10, 10, 255);
-	display: flex;
-	justify-content: center;
 	color: white;
+}
+#main {
+  width: 100%;
+  position:absolute;
+  left:0;
+  top:0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+  color: white;
+}
+.widget {
+  border-radius: 8px;
+  background-color: rgba(30,30,30,255);
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px;
+  padding: 10px;
+  max-width: 50%;
 }
 #page {
 	opacity: 0;
@@ -49,7 +69,7 @@ body {
 	text-align: center;
 }
 #terminal::after {
-	content: "‎_";
+	content: "_";
 	animation: blink 1200ms linear infinite;
     margin-left: 1px;
 }
