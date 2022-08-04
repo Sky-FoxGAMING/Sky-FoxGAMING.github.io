@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
 																				document.getElementById("animateText").style.setProperty("opacity", "0")
 																				setTimeout(() => {
                                                                                     document.getElementById("animateText").innerHTML = "Welcome!";
-																					fetch("https://api.github.com/users/sky-foxgaming/repos")
+																					fetch("https://api.github.com/users/latealways/repos")
 																					.then(resp => resp.json())
 																					.then(data => {
                                                                                         var example = document.getElementById("template").innerHTML;
