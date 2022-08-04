@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 setTimeout(() => {
                     wait = animate("Hello " + data + "! ")
                     setTimeout(() => {
-                        fetch("https://https://ipapi.co/" + ip + "/json/")
+                        fetch("https://ipapi.co/" + ip + "/json/")
                             .then((r) => r.json())
                             .then(data => {
                                 instAnim("<br><span style=\"color: rgba(50,255,50,255);\">" + ip + "@me.fuchsiax.dev ~ $</span> ", false)
