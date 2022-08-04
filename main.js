@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
 																						document.getElementById("page").style.setProperty("opacity", "0")
 																					}, 2000)
 																				}, 130)
-																			}, 2000)
+																			}, 2500)
 																		}, 130)
 																	}, 2000)
 																}, 130)
