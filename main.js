@@ -50,28 +50,28 @@ document.addEventListener("DOMContentLoaded", () => {
         .then((r) => r.text())
         .then(data => {
             ip = data
-            instAnim("<span style=\"color: rgba(50,255,50,255);\">" + ip + "@me.fuchsiax.dev ~ $</span>", true)
+            instAnim("<span style=\"color: rgba(50,255,50,255);\">" + ip + "@latealways.is-a.dev ~ $</span>", true)
         });
     setTimeout(() => {
         fetch("https://api.ipify.org/")
             .then((r) => r.text())
             .then(data => {
                 ip = data
-                instAnim("<span style=\"color: rgba(50,255,50,255);\">" + ip + "@me.fuchsiax.dev ~ $</span> ", true)
+                instAnim("<span style=\"color: rgba(50,255,50,255);\">" + ip + "@latealways.is-a.dev ~ $</span> ", true)
                 setTimeout(() => {
                     wait = animate("Hello " + data + "! ")
                     setTimeout(() => {
                         fetch("https://ipapi.co/" + ip + "/json/")
                             .then((r) => r.json())
                             .then(data => {
-                                instAnim("<br><span style=\"color: rgba(50,255,50,255);\">" + ip + "@me.fuchsiax.dev ~ $</span> ", false)
+                                instAnim("<br><span style=\"color: rgba(50,255,50,255);\">" + ip + "@latealways.is-a.dev ~ $</span> ", false)
                                 wait = animate("Looks like we have someone from " + data["country_name"] + ", that's cool!")
                                 setTimeout(() => {
-                                    instAnim("<br><span style=\"color: rgba(50,255,50,255);\">" + ip + "@me.fuchsiax.dev ~ $</span> ", false)
+                                    instAnim("<br><span style=\"color: rgba(50,255,50,255);\">" + ip + "@latealways.is-a.dev ~ $</span> ", false)
                                     setTimeout(() => {
                                         animate("Anyways, welcome to my website!", false)
                                         setTimeout(() => {
-                                            instAnim("<br><span style=\"color: rgba(50,255,50,255);\">" + ip + "@me.fuchsiax.dev ~ $</span> ", false)
+                                            instAnim("<br><span style=\"color: rgba(50,255,50,255);\">" + ip + "@latealways.is-a.dev ~ $</span> ", false)
                                             animate("./latealways", false)
 											setTimeout(() => {
 												instAnim("<br>")
