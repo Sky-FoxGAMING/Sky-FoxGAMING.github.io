@@ -108,6 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                                                                             add = add.replaceAll("{repo name}",val["full_name"])
                                                                                             add = add.replaceAll("{description}",val["description"])
                                                                                             add = add.replaceAll("{star_count}",val["stargazers_count"])
+											    add = add.replaceAll("{url}",val["html_url"])
                                                                                             add = add.replaceAll("{language}",val["language"] || "None")
                                                                                             document.getElementById("repos").innerHTML += add
                                                                                         }
