@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', async (event) => {
     await delay(1500);
     document.getElementById("page").style.opacity = 0;
     await delay(750);
-    /*document.getElementById("animateText").innerHTML = "Nous préparons tout pour vous.";
+    document.getElementById("animateText").innerHTML = "Nous préparons tout pour vous.";
     await delay(1500);
     document.getElementById("page").style.opacity = 1;
     await delay(1500);
@@ -54,7 +54,7 @@ window.addEventListener('DOMContentLoaded', async (event) => {
     await delay(1500);
     document.getElementById("page").style.transition = "0.3s"
     document.getElementById("page").style.opacity = 0;
-    await delay(750);*/
+    await delay(750);
     document.getElementById("animateText").innerHTML = "Tout est prêt.";
     await delay(750);
     document.getElementById("page").style.opacity = 1;
