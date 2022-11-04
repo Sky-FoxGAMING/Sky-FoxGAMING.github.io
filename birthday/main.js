@@ -67,8 +67,8 @@ window.addEventListener("DOMContentLoaded", async (event) => {
                   .then((res) => res.json())
                   .then(async (res) => {
                     if (res["success"]) {
-                      document.querySelectorAll(".widget")[1].style.display =
-                        "none !important";
+                      document.querySelectorAll(".widget")[1].hidden =
+                        true;
                       document.getElementById("animateText").innerHTML =
                         "Parfait! Je viens de confirmer ta présence. Tu peux tout le temps revenir sur cette page pour annuler ou pour relire les informations.";
                       document.getElementById("page").style.opacity = 1;
@@ -91,8 +91,8 @@ window.addEventListener("DOMContentLoaded", async (event) => {
                   .then((res) => res.json())
                   .then(async (res) => {
                     if (res["success"]) {
-                      document.querySelectorAll(".widget")[1].style.display =
-                        "none !important";
+                      document.querySelectorAll(".widget")[1].hidden =
+                        true;
                       document.getElementById("animateText").innerHTML =
                         "Parfait! Je viens de confirmer que tu ne seras pas là. Tu peux tout le temps revenir sur cette page si tu change d'idée.";
                       document.getElementById("page").style.opacity = 1;
