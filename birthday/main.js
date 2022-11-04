@@ -82,7 +82,7 @@ window.addEventListener("DOMContentLoaded", async (event) => {
                   });
               });
             document
-              .querySelectorAll("#connect")[1]
+              .querySelectorAll("#connect")[2]
               .addEventListener("click", () => {
                 fetch(
                   "https://api.fuchsiax.dev/birthday/set?type=verify&value=false&code=" +
